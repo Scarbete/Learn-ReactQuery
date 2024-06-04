@@ -1,6 +1,7 @@
 import { FC, HTMLAttributes, useState } from 'react'
 import { useQueryClient } from '@tanstack/react-query'
 import { Todo } from '@/features/todo'
+import classnames from 'classnames'
 
 export type TVariantsButton = 'default' | 'orange' | 'secondary' | 'orange_secondary'
 
@@ -27,7 +28,7 @@ const TestComponent = () => {
             } = props
 
             return (
-                <button {...otherProps} className={'customButton'}>
+                <button {...otherProps} className={classnames('customButton', variant)}>
                     {children}
                 </button>
             )

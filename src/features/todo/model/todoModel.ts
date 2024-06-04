@@ -1,14 +1,13 @@
 import { create } from 'zustand'
 
-type States = {
+
+type modelState = {
     limit: number
     page: number
 }
 
-type Actions = {}
 
-
-export const useTodoModel = create<States & Actions>(() => ({
+export const useTodoModel = create<modelState>(() => ({
     limit: 5,
     page: 1,
 }))
