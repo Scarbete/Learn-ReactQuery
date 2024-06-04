@@ -1,0 +1,16 @@
+
+.form {
+    width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background: dimgray;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    button {
+        padding: 5px 15px;
+        width: 100%;
+        background: white;
+    }
+}

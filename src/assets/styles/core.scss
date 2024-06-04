@@ -9,3 +9,32 @@
     background: none;
     font-family: Verdana, sans-serif;
 }
+
+.testFC {
+    width: 500px;
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.counter {
+    width: 400px;
+    background: darkgrey;
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+}
+
+.customButton {
+    background: white;
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}

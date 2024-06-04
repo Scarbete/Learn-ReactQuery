@@ -1,12 +1,12 @@
 import { type FC } from 'react'
-import { TodoComponent } from '@/components/todo'
-import TestComponent from '@/components/testComponent'
+import { TodoComponent } from '@/features/todo'
+// import TestComponent from '@/features/testComponent'
 
 const App: FC = () => {
     return (
         <main>
             <TodoComponent/>
-            <TestComponent/>
+            {/*<TestComponent/>*/}
         </main>
     )
 }

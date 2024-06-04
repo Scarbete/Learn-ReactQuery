@@ -1,10 +1,10 @@
-import { TodoService } from '@/components/todo'
+import { TodoService } from '@/features/todo'
 import { useMutation, useQueryClient } from '@tanstack/react-query'
 
-export const useCreateTodoMutation = () => {
+export const useRemoveTodoMutation = () => {
     const queryClient = useQueryClient()
     return useMutation({
-        mutationFn: TodoService.createTodo,
+        mutationFn: TodoService.removeTodo,
         onSuccess: () => queryClient.invalidateQueries({ queryKey: ['todos'] })
     })
 }

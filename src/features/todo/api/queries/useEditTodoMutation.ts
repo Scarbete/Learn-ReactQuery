@@ -1,4 +1,4 @@
-import { EditTodoMutationFnArgs, TodoService } from '@/components/todo'
+import { EditTodoMutationFnArgs, TodoService } from '@/features/todo'
 import { useMutation, useQueryClient } from '@tanstack/react-query'
 
 export const useEditTodoMutation = () => {

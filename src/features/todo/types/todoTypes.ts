@@ -1,3 +1,4 @@
+import { RegisterOptions } from 'react-hook-form'
 
 export type Todo = Partial<{
     id: number
@@ -18,9 +19,16 @@ export type FetchTodosError = {
 
 export type FetchTodosResult = ( Todo[] | FetchTodosError )
 
-export type TodoFormState = Required<Pick<Todo, 'title' | 'description'>>
+export enum TodoFormKeysEnum {
+    TITLE = 'title',
+    DESCRIPTION = 'description'
+}
+
+export type TodoFormState = Required<Pick<Todo, TodoFormKeysEnum.TITLE | TodoFormKeysEnum.DESCRIPTION>>
 
 export type EditTodoMutationFnArgs = {
     id: number
     newTodo: Todo
 }
+
+export type TodoFormValidation = Record<TodoFormKeysEnum, RegisterOptions>

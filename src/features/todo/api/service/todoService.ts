@@ -1,6 +1,6 @@
 import { requester } from '@/api/axios'
 import { AxiosResponse } from 'axios'
-import { Todo, FetchTodosResult } from '@/components/todo'
+import { Todo, FetchTodosResult } from '@/features/todo'
 
 
 class TodoService {
